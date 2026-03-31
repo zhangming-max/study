@@ -1,0 +1,45 @@
+:root {
+  color-scheme: light;
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  /* Minimal design tokens (light mode) */
+  --bg: #f8fafc;
+  --text: #1e293b;
+  --primary: #2563eb;
+  --cta: #f97316;
+  --card: rgba(255, 255, 255, 0.65);
+  --card-border: rgba(15, 23, 42, 0.12);
+}
+
+body {
+  margin: 0;
+  background: radial-gradient(1000px 600px at 20% 0%, rgba(37, 99, 235, 0.08), transparent 60%), var(--bg);
+  color: var(--text);
+}
+
+button {
+  cursor: pointer;
+  border-radius: 14px;
+  border: 1px solid rgba(15, 23, 42, 0.12);
+  background: rgba(255, 255, 255, 0.72);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  box-shadow: 0 8px 24px rgba(2, 6, 23, 0.06);
+  padding: 10px 14px;
+  color: var(--text);
+  font-weight: 600;
+}
+
+button:focus-visible {
+  outline: 3px solid var(--primary);
+  outline-offset: 2px;
+}
+
+button:disabled {
+  opacity: 0.55;
+  cursor: not-allowed;
+  box-shadow: none;
+}
+
